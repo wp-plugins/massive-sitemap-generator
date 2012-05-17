@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: Massive Sitemap Generator
+Plugin URI: http://plugins.svn.wordpress.org/massive-sitemap-generator/
 Description: Create sitemaps for websites that have over 50,000 pages and posts to be indexed by Google Webmaster Tools
 Version: 0.1.1
 Author: thepauleh
