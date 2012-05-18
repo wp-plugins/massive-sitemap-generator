@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: thepauleh@gmail.com
-Donate link: http://paulsellars.com/
+Donate link: http://www.justgiving.com/teams/swallow
 Tags: sitelinks, massive sitelink generator
 Requires at least: 2.0.2
 Tested up to: 3.3
@@ -12,8 +12,7 @@ Create sitemaps for websites that have over 50,000 pages and posts to be indexed
 
 == Description ==
 
-This Sitemap generator also works on WordPress Multisite and what’s more: It’s super, super fast at generating sitemaps. Commercial crawlers could spend days trying to check every post of your massive WordPress website. With Massive Sitemap Generator this can be done in seconds.
-
+This Sitemap generator also works on WordPress Multisite and whats more: It is super, super fast at generating sitemaps. Commercial crawlers could spend days trying to check every post of your massive WordPress website. With Massive Sitemap Generator this can be done in seconds.
 
 == Installation ==
 
@@ -28,6 +27,10 @@ e.g.
 5. Click 'GO!'
 
 == Frequently Asked Questions ==
+
+Who am I donating to?
+
+Donations will go to Macmillan and Leeds Teaching Hospital Charitable Trust through the justgiving.com page given. We really appreciate the work theyve done for my grandfather with his struggle with cancer. Dont worry about any amount being too small - even the tiniest contribution will be massively appreciated.
 
 I have a question.
 
