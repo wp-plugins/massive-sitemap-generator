@@ -10,6 +10,7 @@ class sitemap_generator {
         $counter = self::get_count();
         $split = ($counter / self::limit);
         self::fetch_records($split);
+		return $split;
     }
     /**
      * Get the total number of posts and pages to be displayed 

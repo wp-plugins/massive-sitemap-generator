@@ -3,12 +3,11 @@
 Plugin Name: Massive Sitemap Generator
 Plugin URI: http://plugins.svn.wordpress.org/massive-sitemap-generator/
 Description: Create sitemaps for websites that have over 50,000 pages and posts to be indexed by Google Webmaster Tools
-Version: 0.1.1
+Version: 0.1.2
 Author: thepauleh
 Author URI: http://paulsellars.com
  */
-
-include("sitemap_generator.php");
+ 
 /**
  * @author P.Sellars
  */
@@ -16,9 +15,13 @@ class massive_sitemap_generator {
     private static $_instance;
     private function __construct(){
         if($_GET['GO']){
-            sitemap_generator::Create();
+			require_once("sitemap_generator.php");
+            $split = sitemap_generator::Create();
+			echo $this->show_admin_panel($split);
         }
+		else{
         echo $this->show_admin_panel();
+		}
     }
     public static function Create(){
         if(!isset(self::$_instance)){
@@ -33,7 +36,7 @@ class massive_sitemap_generator {
     /**
      * Display the admin panel 
      */
-    private function show_admin_panel(){
+    private function show_admin_panel($split = null){
         $dir = wp_upload_dir();
         $output = "<h2>Massive Sitemap Generator</h2>
             <p>
@@ -51,7 +54,14 @@ class massive_sitemap_generator {
             <input type='submit' value='Go!' /></p>";
         }
         else{
-            $output .= "<b>Thankyou, the sitemap generator has been executed.</b>";
+            $output .= "<b>Thankyou, the sitemap generator has been executed.</b><br />
+			<br />
+			Sitemaps:<br />";
+			if($split){
+				for($i = 0; $i <= $split; $i++){
+				$output .= $dir['baseurl']."/sitemap".$i.".xml <br />";
+				}
+			}
         }
         return $output;
     }

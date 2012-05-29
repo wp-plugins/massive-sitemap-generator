@@ -43,11 +43,19 @@ the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1
 2. This is the second screen shot
 
 == Changelog ==
+= 0.1.2 =
+- Fixed an issue that would cause generator to fire on a misconfigured server
+- Quick links added on export for users to see where the sitemaps are created in a url
+
+= 0.1.1 =
+Changes to donation link, removal of ' symbols in description and added FAQ.
 
 = 0.1.0 =
 * Initial Release
 
 == Upgrade Notice ==
+= 0.1.2 =
+Fixed an issue that would cause generator to fire on a misconfigured server
 
 = 0.1.0 =
 Initial Release
